@@ -1,0 +1,20 @@
+{
+  "name": "es-helper-file",
+  "version": "1.0.0",
+  "description": "NodeJS utility to help with file functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eternalsayed/es-helper-file.git"
+  },
+  "author": "Sayed Ahad Abbas <super@eternalsayed.in>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eternalsayed/es-helper-file/issues"
+  },
+  "homepage": "https://github.com/eternalsayed/es-helper-file#readme",
+  "private": true
+}

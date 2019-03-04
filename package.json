@@ -16,5 +16,8 @@
     "url": "https://github.com/eternalsayed/es-helper-file/issues"
   },
   "homepage": "https://github.com/eternalsayed/es-helper-file#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "es-helper-git": "git+https://github.com/eternalsayed/es-helper-git.git"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "es-helper-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS utility to help with file functions",
   "main": "index.js",
   "scripts": {

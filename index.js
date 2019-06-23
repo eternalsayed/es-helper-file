@@ -27,6 +27,20 @@ var localFile = {
             }
         });
     },
+    pathExists: function(path, callback) {
+        fs.stat(path, (err, result) => {
+            if(err) {
+                if(err.code==='ENOENT') {
+                    err.code = 'INVALID_PATH';
+                }
+                else if(['EPIPE'].indexOf(err.code)>=0) {
+                    err.code = 'INVALID_FILE';
+                }
+                return callback(err);
+            }
+            callback(null, result);
+        });
+    },
     copyFile: function (src, dest, callback) {
         fsExtra.copy(src, dest, {replace: true}, callback || defCB);
     },

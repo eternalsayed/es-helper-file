@@ -141,11 +141,9 @@ var localFile = {
         var FolderZip = require('folder-zip');
         //zip a folder and change folder destination name
         var zip = new FolderZip();
-        zip.zipFolder(source, options, function (err, result) {
-            // console.log('err:',err,' result:', result);
-            zip.writeToFile(dest, function (error, response) {
-                // console.log('write output:', error, response)
-                callback(error, response);
+        zip.zipFolder(source, options, function () {
+            zip.writeToFile(dest, function () {
+                callback(null, dest);
             });
         });
         return this;
